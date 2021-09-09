@@ -1,0 +1,25 @@
+body {
+    min-height: 100vh;
+}
+
+#app {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    min-height: 100vh;
+}
+.container {
+    position: relative;
+}
+.container-1, .container-2 {
+    height: 60vh;
+}
+.container-1 {
+    min-width: 75vw;
+}
+.container-2 {
+    min-width: 25vw;
+}
+.container-3, .container-4, .container-5 {
+    height: 40vh;
+}
