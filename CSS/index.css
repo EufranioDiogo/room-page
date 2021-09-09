@@ -132,6 +132,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0 5rem;
+    overflow-y: auto;
 }
 .container-4--title {
     font-size: 2rem;
@@ -166,4 +167,76 @@ body {
 
 .shop-button:hover .shop-button--img {
     opacity: 0.5;
+}
+
+.container-1--header-mobile {
+    display: flex;
+    width: 100%;
+    padding: 5rem 2rem;
+    justify-content: center;
+}
+.hamburger-and-close-button {
+    display: none;
+}
+
+
+@media screen and (max-width: 1024px) {
+    #app {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .container-1, .container-2, .container-3, .container-4, .container-5 {
+        width: 100%;
+    }
+
+    .container-1 {
+        grid-column: unset;
+    }
+    .controller {
+        transform: translateX(0);
+    }
+    .container-1--header {
+        justify-content: center;
+        position: relative;
+        padding: 0;
+        width: 100%;
+    }
+    .header--menu {
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        background-color: #fff;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-left: 0;
+        margin-top: 2.5rem;
+        opacity: 0;
+        transition: 0.5s
+    }
+    .menu-item {
+        margin: 0.5rem 0;
+    }
+    .menu-item:first-child {
+        margin-top: 1rem;
+    }
+    .menu-item:last-child {
+        margin-bottom: 1rem;
+    }
+    .menu-item--link {
+        color: #222;
+    }
+    .container-2 {
+        padding: 0 4rem;
+    }
+    .container-4 {
+        padding: 0 4rem;
+    }
+    .hamburger-and-close-button {
+        display: block;
+        position: absolute;
+        left: 5%;
+        cursor: pointer;
+    }
+
 }
