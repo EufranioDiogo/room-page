@@ -29,7 +29,7 @@
 
 <h2 id="images">Imagens / Images</h2>
 
-![cheease cake result page image](IMG/)
+![cheease cake result page image](IMAGES/Frontend%20Mentor%20Room.png)
 
 ## Source of Ideia / Origem da Ideia?
 [DevChallenges.io](https://devchallenges.io)
